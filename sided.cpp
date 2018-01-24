@@ -24,11 +24,44 @@ ostream& operator<<(ostream &os, Cylindre const& C)
   return os;
 }
 
+
+double VolumeCalculation(Cylindre C, size_t n)
+{
+  double in = 0;
+  double tot = 0;
+  double x,y,z;
+
+  int L = 5;
+  int l = 5;
+  int h = 5;
+
+  Point P;
+
+  for (size_t i = 0; i < n; i++) {
+    x = l*(double) rand()/(double)RAND_MAX;
+    y = L*(double) rand()/(double)RAND_MAX;
+    z = h*(double) rand()/(double)RAND_MAX;
+
+    P = Point(x,y,z);
+    cout<<P<<endl;
+    if(P.isIn(C))
+      in++;
+
+    tot++;
+  }
+
+  cout<<in<<"/"<<tot<<endl;
+  return in;
+
+}
+
 int main()
 {
 Point P(3,2,1);
 cout<<P<<endl;
 Cylindre C(4.3, 2.2, P);
 cout<<C<<endl;
+
+cout<<VolumeCalculation(C,1000)<<endl;
 return 0;
 }

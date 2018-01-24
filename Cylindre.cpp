@@ -8,13 +8,13 @@ Cylindre::Cylindre(double r, double h, Point P)
 {
   this->r = r;
   this->h = h;
-  this->O =new Point(P.getX(), P.getY(), P.getZ());
+  this->O = new Point(P.getX(), P.getY(), P.getZ());
 }
 Cylindre::~Cylindre(){delete O;}
 
-double Cylindre::getR(){return this->r;}
-double Cylindre::getH(){return this->h;}
-Point* Cylindre::getO(){return this->O;}
+double Cylindre::getR() const {return this->r;}
+double Cylindre::getH() const {return this->h;}
+Point* Cylindre::getO() const {return this->O;}
 
 void Cylindre::printCylindre(ostream &os) const
 {

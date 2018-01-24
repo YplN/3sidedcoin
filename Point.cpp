@@ -10,16 +10,33 @@ using namespace std;
     this->y=y;
     this->z=z;
   }
+  Point::Point(Point const& P)
+  {
+    this->x=P.getX();
+    this->y=P.getY();
+    this->z=P.getZ();
+  }
   Point::~Point(){}
+
+  Point& Point::operator=(Point const& P)
+  {
+    if(this != &P)
+    {
+      this->x=P.getX();
+      this->z=P.getZ();
+      this->y=P.getY();
+    }
+    return *this;
+  }
 
   void Point::printPoint(ostream &os) const
   {
     os<<"("<<this->x<<";"<<this->y<<";"<<this->z<<")";
   }
 
-  double Point::getX(){return this->x;}
-  double Point::getY(){return this->y;}
-  double Point::getZ(){return this->z;}
+  double Point::getX() const {return this->x;}
+  double Point::getY() const {return this->y;}
+  double Point::getZ() const {return this->z;}
 
   bool Point::isIn(Cylindre C)
   {

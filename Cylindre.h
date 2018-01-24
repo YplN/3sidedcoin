@@ -21,9 +21,9 @@ class Cylindre
   Cylindre(double r, double h, Point P);
   ~Cylindre();
 
-  double getR();
-  double getH();
-  Point* getO();
+  double getR() const;
+  double getH() const;
+  Point* getO() const;
 
   void printCylindre(std::ostream &os) const;
 
