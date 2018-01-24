@@ -1,5 +1,5 @@
 =========================</br>
-= OBJECTIF DE CE PROJET =</br>
+=     OBJECTIF DE CE PROJET     =</br>
 =========================</br>
 
 Ce projet est une tentative pour calculer les dimensions d'une piece qui aurait trois faces.</br>
@@ -15,7 +15,7 @@ O : Face </br>
 L'idee de la proposition est de considerer que si un cylindre forme un angle alpha entre le sol et une de ses faces "planes" (i.e. Pile ou Face), alors il faut trouver une valeur x telle que lorsque 0<=alpha<=x, alors la piece tombe sur la tranche, alors que si x<alpha<=pi/2, la piece tombe sur une face "plane". </br>
 Comme il n'y a, a priori, aucune raison pour que la distribution de cet angle ne soit pas uniformement repartie entre 0 et pi/2, et qu'on doit avoir P(|)=P(X)=P(O) ainsi que P(0<=alpha<=x) = 2P(x<alpha<=pi/2), on a x = pi/3.</br>
 En appelant P le plan orthogonal au sol passant par le point d'intersection entre la piece et le sol et orthogonal à ?.. </br>
-Il faut donc calculer quelle doit etre la hauteur d'un cylindre pour que, lorsqu'il forme un angle de pi/3 avec le sol, le volume correspondant a la partie gauche de l'intersection entre P et la piece soit egal au volume de la partie droite.<\br>
+Il faut donc calculer quelle doit etre la hauteur d'un cylindre pour que, lorsqu'il forme un angle de pi/3 avec le sol, le volume correspondant a la partie gauche de l'intersection entre P et la piece soit egal au volume de la partie droite.</br>
 </br>
 A suivre...</br>
 </br>
