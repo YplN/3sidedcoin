@@ -19,6 +19,7 @@ class Cylindre
   public:
   Cylindre();
   Cylindre(double r, double h, Point P);
+  Cylindre(const Cylindre &c);
   ~Cylindre();
 
   double getR() const;
