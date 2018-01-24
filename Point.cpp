@@ -38,7 +38,7 @@ using namespace std;
   double Point::getY() const {return this->y;}
   double Point::getZ() const {return this->z;}
 
-  bool Point::isIn(Cylindre C)
+  bool Point::isIn(Cylindre& C)
   {
      return (distance(this, C.getO())<= C.getR() && this->getZ()>=0 && this->getZ()<= C.getH());
   }
