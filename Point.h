@@ -26,7 +26,7 @@ public:
   double getX() const;
   double getY() const;
   double getZ() const;
-  bool isIn(Cylindre C);
+  bool isIn(Cylindre& C);
 };
 
 #endif

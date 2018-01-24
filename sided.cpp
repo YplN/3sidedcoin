@@ -25,7 +25,7 @@ ostream& operator<<(ostream &os, Cylindre const& C)
 }
 
 
-double VolumeCalculation(Cylindre C, size_t n)
+double VolumeCalculation(Cylindre &C, size_t n)
 {
   double in = 0;
   double tot = 0;
