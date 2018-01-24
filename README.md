@@ -1,11 +1,11 @@
-============================
-=   OBJECTIF DE CE PROJET  =
-============================
+=========================
+= OBJECTIF DE CE PROJET =
+=========================
 
-Ce projet est une tentative pour calculer les dimensions d'une piece qui aurait trois faces.
-Si on considere qu'une piece a une epaisseur, alors quelle doit etre la taille de cette derniere (en fonction du rayon de la piece) pour que la piece est 1 chance sur 3 de tomber sur le coté Pile, 1 chance sur 3 de tomber sur le cote Face, et 1 chance sur 3 pour tomber sur la tranche.
-Il existe plusieurs personnes ayant tente de repondre a cette question ; en fixant un rayon de 1, une des reponses apportees est d'avoir une epaisseur de 2sqrt(2), une autre propose une epaisseur de sqrt(3) (cf source). 
-Il semblerait que, d'un point de vue experimental, la premiere proposition a une epaisseur trop fine (et donc la tranche tombe moins souvent qu'une fois sur trois) alors que la seconde est trop grande (plus d'une fois sur trois).
+Ce projet est une tentative pour calculer les dimensions d'une piece qui aurait trois faces.</br>
+Si on considere qu'une piece a une epaisseur, alors quelle doit etre la taille de cette derniere (en fonction du rayon de la piece) pour que la piece est 1 chance sur 3 de tomber sur le coté Pile, 1 chance sur 3 de tomber sur le cote Face, et 1 chance sur 3 pour tomber sur la tranche.</br>
+Il existe plusieurs personnes ayant tente de repondre a cette question ; en fixant un rayon de 1, une des reponses apportees est d'avoir une epaisseur de 2sqrt(2), une autre propose une epaisseur de sqrt(3) (cf source). </br>
+Il semblerait que, d'un point de vue experimental, la premiere proposition a une epaisseur trop fine (et donc la tranche tombe moins souvent qu'une fois sur trois) alors que la seconde est trop grande (plus d'une fois sur trois).</br>
 
 == Notation ==
 | : tranche 
