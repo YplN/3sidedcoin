@@ -2,18 +2,19 @@
 #define CYLINDRE_H
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 #include <cstdlib>
 #include <time.h>
-#include "Point.h"
 
-using namespace std;
+class Cylindre;//Forward and Uncomplete declaration
+
+#include "Point.h"
 
 class Cylindre
 {
   double r;
   double h;
-  Point O;
+  Point *O;
 
   public:
   Cylindre();
@@ -22,9 +23,9 @@ class Cylindre
 
   double getR();
   double getH();
-  Point getO();
+  Point* getO();
 
-  void printCylindre(ostream &os) const;
+  void printCylindre(std::ostream &os) const;
 
 };
 

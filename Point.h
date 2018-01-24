@@ -6,9 +6,9 @@
 #include <cstdlib>
 #include <time.h>
 
-#include "Cylindre.h"
+class Point;//Forward and uncomplete! declaration
 
-using namespace std;
+#include "Cylindre.h"
 
 class Point
 {
@@ -20,7 +20,7 @@ public:
   Point();
   Point(double x, double y, double z);
   ~Point();
-  void printPoint(ostream &os) const;
+  void printPoint(std::ostream &os) const;
   double getX();
   double getY();
   double getZ();
